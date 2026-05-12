@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastapi-file-validator"
+version = "0.0.0"
+description = "A lightweight, flexible file extension validator and MIME type checker for fastapi"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+keywords = [
+    "validator",
+]
+authors = [
+    {name = "Seungkyu-Han", email="trust1204@gmail.com"}
+]
+
+dependencies = [
+    "fastapi>=0.110.1",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Seungkyu-Han/fastapi-file-validator"
+"Bug Tracker" = "https://github.com/Seungkyu-Han/fastapi-file-validator"
+"Documentation" = "https://github.com/Seungkyu-Han/fastapi-file-validator"
+"Source" = "https://github.com/Seungkyu-Han/fastapi-file-validator"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
+
+[tool.black]
+line-length = 100
+target-version = ['py38', 'py39', 'py310', 'py311']
+
+
+[tool.setuptools]
+packages = ["file_validator"]
