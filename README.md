@@ -1,4 +1,4 @@
-# FastAPI File Validators
+# FastAPI File Validator
 
 A simple, lightweight, and flexible decorator-based file validation library for FastAPI. Easily validate uploaded file extensions and file sizes before hitting your endpoint logic.
 
@@ -16,7 +16,7 @@ A simple, lightweight, and flexible decorator-based file validation library for 
 Install via pip:
 
 ```bash
-pip install fastapi-file-validators
+pip install fastapi-file-validator
 
 ```
 
